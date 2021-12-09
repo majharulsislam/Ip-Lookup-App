@@ -1,0 +1,335 @@
+@media only screen and (min-width: 1600px){
+	.container{
+		max-width: 1640px;
+	}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px){
+	.top_menus li a {
+	    padding: 4px 16px;
+	}
+	.bottom_menus li a {
+	    padding: 0 22px 0 24px;
+	}
+		.ip_put_label {
+	    width: 23%;
+	}
+	.ip_put_here {
+	    width: 77%;
+	}
+	.ip_private_view {
+	    margin-left: 25px;
+	}
+	.hide_my_ip_btn a{
+		font-size: 14px;
+	}
+	.put_ip_address_right_side{
+		margin: 0;
+	}
+	.single_speed_result {
+	    margin-right: 20px;
+	}
+	.ip_addresses_box.dns_lookukp_box {
+	    padding: 40px 70px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.top_menus li a{
+		padding: 4px 21px;
+	}
+	.bottom_menus li a{
+		padding: 0 22px 0 28px;
+	}
+	.ip_private_view{
+	    margin-left: 30px;
+	}
+	.put_ip_address_left_side {
+	    margin-right: 15px;
+	}
+	.put_ip_address_right_side {
+	    margin-left: 15px;
+	}
+	.single_speed_result {
+	    margin-right: 30px;
+	}
+	.speedr_img{
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.top_menus li a{
+		padding: 4px 22px;
+	}
+	.bottom_menus li a{
+		padding: 0 30px 0 25px;
+	}
+	.put_ip_address_right_side{
+		margin: 0;
+	}
+	.hide_my_ip_btn a{
+		font-size: 14px;
+	}
+
+	/*speed test*/
+	.single_speed_result {
+	    margin-right: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/*header*/
+	.top_header_items .col-md-7 {
+	    width: 100%;
+	    order: 3;
+	    margin-top: 15px;
+	}
+	.top_header_items .col-md-2, .top_header_items .col-md-3 {
+	    width: 50%;
+	}
+	.bottom_menus li a {
+	    padding: 0 16px;
+	    font-size: 11px;
+	}
+	/*end header*/
+
+	.ip_addresses_box .col-md-8, .ip_addresses_box .col-md-4 {
+	    width: 100%;
+	}
+
+	/*dns page*/
+	.dns_url {
+		width: 15%;
+	}
+	.dns_lookup_form{
+		width: 85%;
+	}
+	.dns_lookup_in {
+	    width: 70%;
+	}
+	.dns_lookup_btn {
+	    width: 30%;
+	}
+	.dns_lookup_btn button{
+		font-size: 14px;
+		padding: 12px 22px 11px 23px;
+	}
+	.dns_lookup_text p {
+	    font-size: 13px;
+	    line-height: 20px;
+	}
+
+	/*speed test*/
+	.internet_speed_result_area {
+	    flex-wrap: wrap;
+	}
+	.single_speed_result {
+	    width: 50%;
+	    margin: 0 0 10px;
+	    justify-content: center;
+	}
+	.ip_addresses_box.dns_lookukp_box {
+	    padding: 40px 70px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.common_btn {
+	    font-size: 11px;
+	}
+
+	/*header*/
+	.bottom_nav_menu {
+	    overflow: hidden;
+	}
+	.bottom_menus {
+	    overflow-x: scroll;
+	    white-space: nowrap;
+	    justify-content: inherit !important;
+	}
+	.bottom_menus li a {
+		padding: 0 15px;
+		font-size: 11px;
+	}
+	.top_header_items .col-md-2 {
+	    width: 40%;
+	}
+	.top_header_items .col-md-3 {
+	    order: 2;
+	    width: 60%;
+	}
+	.top_header_items .col-md-7 {
+	    order: 3;
+	}
+	.top_menus li a {
+	    font-size: 12px;
+	    padding: 5px 20px;
+	    margin-top: 15px;
+	}
+	.top_menus li a img {
+	    margin-right: 4px;
+	    width: 10px;
+	}
+	/*end header*/
+	.ip_addresses_box, .ip_details_information_text {
+	    padding: 20px 10px;
+	}
+	.put_ip_address_left_side, .put_ip_address_right_side{
+		margin: 0;
+	}
+	.ip_address_put_in_box {
+	    margin-bottom: 20px;
+	    padding: 12px 15px;
+	    border: 1px solid #f4f4f4;
+	}	
+	.ip_putin_box_area h2 {
+	    font-size: 13px;
+	}
+	.ip_put_label h2 img {
+	    margin-left: 4px;
+	    width: 13px;
+	}
+	.ip_put_in input, .ip_put_in input::placeholder {
+	    font-size: 13px;
+	}
+	.second_ip_put_box:after{
+		right: 45px;
+		top: 48px;
+	}
+	.ip_private_view{
+		margin: 35px 0 0;
+	}
+	.ip_information_box:after {
+	    top: inherit;
+	    right: 45px;
+	    bottom: -22px;
+	    transform: rotate(315deg);
+	}
+	.hide_my_ip_btn a{
+		font-size: 14px;
+		padding: 13px;
+		margin: 13px 0 15px;
+	}
+	.ip_details_information_text{
+		padding: 30px 15px 20px;
+	}
+	.ip_details_single_text p {
+	    margin-top: 5px;
+	    font-size: 12px;
+	    line-height: 23px;
+	}
+
+	/*dns page*/
+	.ip_addresses_box.dns_lookukp_box{
+		padding: 20px;
+	}
+	.dns_url {
+	    width: 14%;
+	}
+	.dns_lookup_form{
+		width: 86%;
+	}
+	.url_label {
+	    display: inline-block;
+	    padding: 7px 15px;
+	    font-size: 14px;
+	}
+	.dns_lookup_in {
+	    width: 100%;
+	}
+	.dns_lookup_in input::placeholder {
+	    font-size: 12px;
+	}
+	.dns_lookup_btn {
+	    width: 30%;
+	}
+	.dns_lookup_btn button {
+	    font-size: 11px;
+	    padding: 5px 8px;
+	}
+	.dns_title {
+	    font-size: 20px;
+	}
+	.dns_lookup_text {
+	    padding: 0 18px;
+	}
+	.dns_lookup_text p {
+	    font-size: 11px;
+	    line-height: 19px;
+	}
+	.lookup_details_info_text {
+		margin-top: 60px;
+	}
+
+	/*speed test*/
+	.single_speed_result {
+	    width: 50%;
+	    margin: 0;
+	    justify-content: center;
+	}
+	.internet_speed_result_area {
+	    flex-wrap: wrap;
+	}
+	.speedr_info_text {
+	    text-align: left;
+	}
+	.speedr_info_text h3 {
+	    font-size: 12px;
+	}
+	.speedr_img {
+	    margin-right: 10px;
+	}
+	.internet_speed_go_btns {
+	    margin: 0 20px;
+	}
+	.internet_speed_go_btns span.gobtntext {
+	    font-size: 45px;
+	}
+	.first_circle {
+	    width: 140px;
+	    height: 140px;
+	}
+	.second_circle {
+	    width: 134px;
+	    height: 134px;
+	    top: 2px;
+	    left: 2px;
+	}
+	.third_circle {
+	    width: 126px;
+	    height: 126px;
+	    line-height: 126px;
+	    top: 3px;
+	    left: 3px;
+	}
+
+}
+
+/* Wide Mobile Layout */
+@media only screen and (max-width: 479px) {
+	.top_menus li a {
+	    padding: 2px 7px;
+	}
+	.dns_url {
+	    margin: 0 0 15px;
+	    width: 100%;
+	}
+	.dns_lookup_fill_box_area {
+	    flex-direction: column;
+	}
+	.url_label {
+	    padding: 5px 15px;
+	}
+	.dns_lookup_in input{
+		padding-left: 4px;
+		font-size: 12px;
+	}
+	.dns_lookup_in input::placeholder{
+		font-size: 11px;
+	}
+	.internet_speed_go_btns{
+		margin: 0;
+	}
+}

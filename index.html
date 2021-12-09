@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ip Lookup App</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Header Area -->
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+					<div class="top_header_items">
+						<div class="row align-items-center">
+							<div class="col-md-2">
+								<div class="logo">
+									<a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="top_nav_item">
+									<ul class="top_menus d-flex justify-content-center">
+										<li><a href="speed-test.html"><img src="asset/img/icons/speed-meter.svg" alt="">Speed Test</a></li>
+										<li class="active"><a href="index.html"><img src="asset/img/icons/search.svg" alt="">IP Lookup</a></li>
+										<li><a href="#"><img src="asset/img/icons/edit.svg" alt="">Change IP</a></li>
+										<li><a href="#"><img src="asset/img/icons/eye-hide.svg" alt="">Hide IP</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="top_bar_btns d-flex justify-content-end">
+									<div class="top_sign_btn">
+										<a href="#" class="common_btn">Sign In</a>
+									</div>
+									<div class="top_create_ac_btn">
+										<a href="#" class="common_btn">Create Account</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header -->
+	<div class="bottom_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+					<div class="bottom_nav_menu">
+						<ul class="bottom_menus d-flex justify-content-center">
+							<li><a href="#">IP Address Lookup</a></li>
+							<li><a href="#">IP Whois Lookup</a></li>
+							<li><a href="#">Tools</a></li>
+							<li><a href="#">Investigate</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">WiFi</a></li>
+							<li><a href="#">Safety</a></li>
+							<li><a href="#">Learn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+<!-- bg section -->
+<div class="only_bg_area"></div>
+<!-- end bg section -->
+
+
+<!-- Put ip addrss box area -->
+<section class="put_ip_address_box_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="ip_addresses_box">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="put_ip_address_left_side">
+								<div class="ip_putin_box_area">
+									<p class="common_sm_para">My IP Address is:</p>
+									<div class="ip_address_put_in_box d-flex align-items-center">
+										<div class="ip_put_label">
+											<h2>IPv4: <img src="asset/img/icons/arrow-right.svg" alt=""></h2>
+										</div>
+										<div class="ip_put_here d-flex">
+											<div class="ip_put_in">
+												<input type="text" name="" id="" placeholder="105.112.37.108">
+											</div>
+											<div class="ip_copy_icon">
+												<a href="#"><img src="asset/img/icons/copy.svg" alt="copy-icon"></a>
+											</div>
+										</div>
+									</div>
+									<div class="ip_address_put_in_box second_ip_put_box d-flex align-items-center">
+										<div class="ip_put_label">
+											<h2>IPv4: <img src="asset/img/icons/arrow-right.svg" alt=""></h2>
+										</div>
+										<div class="ip_put_here">
+											<div class="ip_put_in">
+												<input type="text" name="" id="" placeholder="Not detected">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="ip_information_area">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="ip_public_view">
+												<p class="common_sm_para">My IP Information:</p>
+												<div class="ip_information_box">
+													<table class="table">
+														<tr>
+															<td>ISP:</td>
+															<td>Internet Provider</td>
+														</tr>
+														<tr>
+															<td>City:</td>
+															<td>Fontana Village</td>
+														</tr>
+														<tr>
+															<td>Region:</td>
+															<td>North Carolina</td>
+														</tr>
+														<tr>
+															<td>Country:</td>
+															<td>USA</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="ip_private_view text-center">
+												<p>Your private information is exposed!</p>
+												<div class="hide_my_ip_btn">
+													<a href="#">Hide My IP Address Now</a>
+												</div>
+												<div class="shop_ip_detail_btn">
+													<a href="#" class="common_btn">Show Complete IP Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="put_ip_address_right_side">
+									<div class="map_info_area text-center">
+										<div class="map_area">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453306!3d36.24128894212528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1637749940492!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+									</div>
+									<div class="map_info">
+										<p>Location not accurate?</p>
+										<div class="locate_up_btn">
+											<a href="#" class="common_btn">Update My IP Location</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Put ip addrss box area -->
+
+<!-- Ip details information area -->
+<section class="ip_details_information_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="ip_details_information_text">
+					<div class="ip_details_single_text">
+						<h3>What Is My IP?</h3>
+						<p>WhatIsMyIP.com® is the industry leader in providing IP address information. Knowing your public IP address is crucial for online gaming, using remote desktop connections, and connecting to a security camera DVR. The IP address assigned to your home network allows you to be connected to the internet. WhatIsMyIP.com can also help you identify your VPN location if your goal is to protect your privacy or watch Netflix from a different region.</p>
+						<p>WhatIsMyIP.com provides tools that allow users to perform an IP Location Lookup, IP Whois Lookup, Internet Speed Test, Proxy Detection, and more. Extensive tutorials show users how to trace an email address, how to create strong passwords, and how to avoid being tracked by ads online.</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>What Is An IP Address?</h3>
+						<p>IP address stands for Internet Protocol Address. An IP is a unique number assigned to all information technology connected devices such as printers, routers, modems, and even refrigerators. The IP address identifies and allows these devices the ability to communicate with each other on an internal or external computer network. Any device that transmits or receives internet traffic will be assigned an IP address.</p>
+						<p>There is a standard of communication which is called an Internet Protocol (IP) standard. In laymans terms it is the same as your home address. In order for you to receive snail mail, the sending party must have your correct mailing address (IP address). If any of the mailing information is incorrect, you do not receive bills, pizza coupons or your tax refund.</p>
+						<p>The same is true for all equipment on the internet. Without this specific address, information cannot be received.</p>
+						<p>IP addresses may either be assigned static or dynamic. Static IPs are reserved for an Email server/Business server or a permanent home resident. These IPs are assigned from a pool of available addresses from your Internet Service Provider. A static IP may not be available in all areas and may cost extra.</p>
+						<p>Dynamic IP address are usually assigned on a first come, first served basis. The types of IP addresses that are dynamic are often assigned to residential customers.</p>
+						<p>Public vs. Private IP likely means someone wants to remain anonymous. The best way to accomplish this is by using a VPN (Virtual Private Network) service or proxy servers.</p>
+						<p>However, in tech terms private IP addresses are those addresses that are reserved for internal network use only. Your home router has an external IP address and internal IP address. The internal IP address is likely 192.168.1.1. Your router will assign private IPs to all connected devices on your home network.</p>
+						<p>The current versions of IP addresses being assigned are IPv4 and IPv6.</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>What Is IPv4?</h3>
+						<p>IP version 4 is currently used by most network devices. However, with more and more computers accessing the internet, IPv4 addresses are running out quickly. Just like in a city, addresses have to be created for new neighborhoods but, if your neighborhood gets too large, you will have to come up with an entire new pool of addresses.</p>
+						<p>There are exactly 4,294,967,296 IPv4 addresses that can be assigned. IPv4 addresses consist of four octets using 0-255 and are separated by decimals like this 75.0.253.255.</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>What Is IPv6?</h3>
+						<p>Internet Protocol version 6 is the replacement for the aging IPv4. An IPv6 address consists of 8 groups of four hexadecimal digits (0-9 and a-f) separated by colons and looks like this 2600:1005:b062:61e4:74d7:f292:802c:fbfd. If one of the groups only contains zeros, that group can be omitted.</p>
+						<p>One example is 2600:1005:b062:0000:74d7:f292:802c:fbfd can be rewritten as 2600:1005:b062::74d7:f292:802c:fbfd. The estimated number of unique addresses for IPv6 is 340,282,366,920,938,463,463,374,607,431,768,211,456 or 2^128.</p>
+						<p>The old and current standard of addresses was this: 192.168.100.100 and the new way can be written different ways but means the same and are all valid:</p>
+						<p>* 1080:0000:0000:0000:0000:0034:0000:417A</p>
+						<p>* 1080:0:0:0:0:34:0:417A</p>
+						<p>* 1080::34:0:417A</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>Static IP vs. Dynamic IP</h3>
+						<p>The short definition is a static IP doesn't change where a dynamic IP can change. A dynamic IP will not always change though as it depends on how the ISP has the IP address lease times and assignments setup.</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>API</h3>
+						<p>Our API gives you access to most of our tools through a specific URL interface.</p>
+						<p>Check our pricing page to see different account level usage allowances.</p>
+						<p>Gold level accounts get 10 API keys.</p>
+						<p>Each key is allowed 1,440 calls per day (1 per minute) for a total of 14,400 calls per 24 hour period. API Definition</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Ip details information area -->
+
+
+<!-- Footer Area -->
+<footer class="footer_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="footer_text text-center">
+					<p>Copyright © 1999-2021 WhatIsMyIP.com®</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+	
+</div>
+<!-- End body code start here -->
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>

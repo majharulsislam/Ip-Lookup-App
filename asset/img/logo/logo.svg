@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="40.113" viewBox="0 0 158 40.113">
+  <g id="Group_956" data-name="Group 956" transform="translate(-416 -10.969)">
+    <text id="Lookup" transform="translate(466 39.969)" fill="#272727" font-size="25" font-family="Merriweather-Bold, Merriweather" font-weight="700"><tspan x="0" y="0">LOOKUP</tspan></text>
+    <g id="Group_955" data-name="Group 955" transform="translate(416 10.969)">
+      <text id="IP" transform="translate(14.381 22.315)" fill="#703a88" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">IP</tspan></text>
+      <path id="bx-search" d="M25.958,37.306a17.048,17.048,0,0,1-10.5-3.618L6.032,43.113,3,40.081l9.426-9.426a17.133,17.133,0,1,1,13.532,6.651Zm0-30.018A12.865,12.865,0,1,0,38.823,20.153,12.879,12.879,0,0,0,25.958,7.288Z" transform="translate(-3 -3)" fill="#703a88"/>
+    </g>
+  </g>
+</svg>

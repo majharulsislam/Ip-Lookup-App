@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Internet Speed Test</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Header Area -->
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+					<div class="top_header_items">
+						<div class="row align-items-center">
+							<div class="col-md-2">
+								<div class="logo">
+									<a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="top_nav_item">
+									<ul class="top_menus d-flex justify-content-center">
+										<li class="active"><a href="speed-test.html"><img src="asset/img/icons/speed-meter.svg" alt="">Speed Test</a></li>
+										<li><a href="index.html"><img src="asset/img/icons/search.svg" alt="">IP Lookup</a></li>
+										<li><a href="#"><img src="asset/img/icons/edit.svg" alt="">Change IP</a></li>
+										<li><a href="#"><img src="asset/img/icons/eye-hide.svg" alt="">Hide IP</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="top_bar_btns d-flex justify-content-end">
+									<div class="top_sign_btn">
+										<a href="#" class="common_btn">Sign In</a>
+									</div>
+									<div class="top_create_ac_btn">
+										<a href="#" class="common_btn">Create Account</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header -->
+	<div class="bottom_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+					<div class="bottom_nav_menu">
+						<ul class="bottom_menus d-flex justify-content-center">
+							<li><a href="#">IP Address Lookup</a></li>
+							<li><a href="#">IP Whois Lookup</a></li>
+							<li><a href="#">Tools</a></li>
+							<li><a href="#">Investigate</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">WiFi</a></li>
+							<li><a href="#">Safety</a></li>
+							<li><a href="#">Learn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+<!-- bg section -->
+<div class="only_bg_area"></div>
+<!-- end bg section -->
+
+
+<!-- Put ip addrss box area -->
+<section class="put_ip_address_box_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="ip_addresses_box dns_lookukp_box">
+					<div class="dns_lookup_details text-center">
+						<h1 class="dns_title">Internet Speed Test</h1>
+						<div class="internet_speed_test_area d-flex justify-content-center">
+							<div class="speed_result">
+								<a href="#" class="common_btn"><img src="asset/img/icons/result-check.svg" alt="image">Results</a>
+							</div>
+							<div class="internet_speed_go_btns">
+								<!-- go button -->
+								<span class="gobtntext">
+									<div class="first_circle">
+										<div class="second_circle">
+											<div class="third_circle">
+												GO
+											</div>
+										</div>
+									</div>
+								</span>
+								<!-- end go button -->
+
+								<!-- Speed Test Meter -->
+								<section id="speedtestMeter">
+									<div class="container">
+										<div class="row">
+											<div class="background-half-round">
+											  <div class="speed-number-wapper">
+											    <div class="speed-number speed-0">
+											      <span>0</span>
+											    </div>
+											    <div class="speed-number speed-1">
+											      <span>1</span>
+											    </div>
+											    <div class="speed-number speed-5">
+											      <span>5</span>
+											    </div>
+											    <div class="speed-number speed-10">
+											      <span>10</span>
+											    </div>
+											    <div class="speed-number speed-20">
+											      <span>20</span>
+											    </div>
+											    <div class="speed-number speed-30">
+											      <span>30</span>
+											    </div>
+											    <div class="speed-number speed-50">
+											      <span>50</span>
+											    </div>
+											    <div class="speed-number speed-70">
+											      <span>70</span>
+											    </div>
+											    <div class="speed-number speed-90">
+											      <span>90</span>
+											    </div>
+											  </div>
+								  				<div class="pointer speed-ani"></div>
+								  				<div class="speed_test_number">
+								  					<h2 class="final_number">0.00</h2>
+								  					<p class="final_speed">0Mb/s</p>
+								  				</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- End Speed Test meter -->
+							</div>
+							<div class="speed_result">
+								<a href="#" class="common_btn"><img src="asset/img/icons/setting.svg" alt="image">Settings</a>
+							</div>
+						</div>
+						<!-- result check-->
+						<div class="internet_speed_result_area d-flex justify-content-center">
+							<div class="single_speed_result d-flex">
+								<div class="speedr_img">
+									<img src="asset/img/icons/user.svg" alt="img">
+								</div>
+								<div class="speedr_info_text">
+									<h3>Internet Provider</h3>
+									<p>169.456.678.23</p>
+								</div>
+							</div>
+							<div class="single_speed_result d-flex">
+								<div class="speedr_img">
+									<img src="asset/img/icons/network-globe.svg" alt="img">
+								</div>
+								<div class="speedr_info_text">
+									<h3>New York</h3>
+									<p>USA</p>
+								</div>
+							</div>
+							<div class="single_speed_result d-flex">
+								<div class="speedr_img">
+									<img src="asset/img/icons/down-arrow.svg" alt="img">
+								</div>
+								<div class="speedr_info_text">
+									<h3>DOWNLOAD SPEED</h3>
+									<p>0Mb/s</p>
+								</div>
+							</div>
+							<div class="single_speed_result d-flex">
+								<div class="speedr_img">
+									<img src="asset/img/icons/up-arrow.svg" alt="img">
+								</div>
+								<div class="speedr_info_text">
+									<h3>UPLOAD SPEED</h3>
+									<p>0Mb/s</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Put ip addrss box area -->
+
+<!-- Ip details information area -->
+<section class="ip_details_information_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="ip_details_information_text lookup_details_info_text">
+					<div class="ip_details_single_text">
+						<h3>What Is An Internet Speed Test?</h3>
+						<p>An internet speed test will show you the results of the fastest upload and download burst rates.  This is during your internet speed test from your location to the location of the test server you choose. TCP/IP degrades over distance so choose the server closest to you when performing the internet speed test. Your test results may vary at different times of the day due to network congestion, etc. To get a good understanding of your bandwidth burst averages, run the test at different times of the day.</p>
+						<p>The internet speed test can also be used as a tool.  This may help determine if there is something wrong with your broadband link. If your favorite web site is loading slow, you can come here and do an internet speed test.  You can know if it's your link or the server where the web site resides. If your test results are comparable to past results, then you know it's not your line having a problem.</p>
+						<p>A broadband speed test can help you determine if you're getting the most bang for your buck with your ISP. You could be paying upwards of $50 dollars a month for access to the web from your ISP. To know exactly how fast your link actually is beneficial.  It will be an important step in identifying whether you are really getting value for your money.</p>
+						<p>There are numerous free websites that allow you to run an internet speed test. One of the best and biggest is Speedtest.net. This site provide comprehensive analysis of your internet hookup to locations scattered all over the world. When you initiate an internet speed test on this website they will analyze three criteria.  It will check upload transfer rate, download transfer rate and ping rate (or lag).</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>How Does The Test Work?</h3>
+						<p>When you start an internet speed test, the website will transmit a file and determine the duration required for that file to reach its destination. The broadband speed test reversed to check the necessary duration your link takes to download by your computer. At the end of the broadband speed test a graphical representation of the average rate of data exchange displays both your upload and download outcomes. Some web sites will even allow you to compare your values against the results of other users in your area, giving you an even better idea of how well your link is performing</p>
+						<p>While upload and download figures are important, the true test of the quality of your hookup is your 'ping' rate. Sometimes known as 'latency' or 'lag', ping is the millisecond measurement it takes for a small piece of data to travel from your computer, reach its location and then travel back to you. The lower the ping number, the faster your link is. While a low ping number is not necessary for general day-to-day web surfing, if you enjoy playing online games, then it is absolutely essential.</p>
+					</div>
+					<div class="ip_details_single_text">
+						<h3>Broadband Speed Test Results?</h3>
+						<p>Your broadband speed test results are always going to vary somewhat depending on the time of day, your computer's configuration, as well as a host of other variables. Knowing your links transfer rate is a valuable tool that you can use in identifying problems and solving them fast when a test shows slower than normal results. Once you establish a baseline by running more than one test at varying periods throughout the day and over several days, you'll have the ability to readily identify a connectivity issue should one exist between you and your ISP. Obviously one of the biggest factors would be the type of connection you have as well. Dial up will be the slowest and might not even complete the test.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Ip details information area -->
+
+
+<!-- Footer Area -->
+<footer class="footer_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+				<div class="footer_text text-center">
+					<p>Copyright © 1999-2021 WhatIsMyIP.com®</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+	
+</div>
+<!-- End body code start here -->
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>

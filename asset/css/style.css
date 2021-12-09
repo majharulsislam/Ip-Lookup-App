@@ -1,0 +1,729 @@
+/* ----------------------------------------------------------------------------------------
+Author       : Boost Design
+Template Name: Ip Lookup App
+Version      : 1.0
+ ---------------------------------------------------------------------------------------- */
+
+/*------------------------------------------------------------------*
+
+[Table of contents]
+
+01.Reset CSS
+02.Font CSS
+03.General Css 
+04.Common CSS
+
+***-------------------------------------------------------------------*/
+
+/* 01. Reset CSS
+=============================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #272727;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    font-family: Merriweather-Regular;
+    color: #272727;
+}
+/* Reset CSS End
+===============================================================*/
+
+
+/* 02. Font CSS Start
+=============================================================== */
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src:url("../fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: Merriweather-Bold;
+    src:url("../fonts/Merriweather-Bold.ttf");
+}
+
+@font-face {
+    font-family: Merriweather-Light;
+    src:url("../fonts/Merriweather-Light.ttf");
+}
+
+/* General Css Start
+=============================================================== */
+h1 {
+    font-size: 24px;
+    line-height: 31px;
+    font-family: Merriweather-Bold;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Merriweather-Bold;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Merriweather-Bold;
+}
+
+p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    word-wrap: break-word;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* General Css End
+=============================================================== */
+.common_btn{
+    font-size: 12px;
+    line-height: 15px;
+    color: #272727;
+    text-decoration-line: underline !important;
+}
+
+.common_sm_para {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.only_bg_area {
+    background: #703A88;
+    height: 230px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+/* Header Css
+=============================================================== */
+.top_header_area {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    padding: 14px 0;
+}
+.top_menus li a {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #272727;
+    padding: 4px 27px;
+    border-right: 1px solid #707070;
+    transition: 0.3s;
+}
+.top_menus li:first-child a {
+    border-left: 1px solid #707070;
+}
+.top_menus li.active a{
+    border-bottom: 2px solid #703A88;
+}
+.top_menus li:hover a{
+    color: #703A88;
+}
+.top_menus li a img {
+    margin-right: 8px;
+}
+.top_create_ac_btn {
+    margin-left: 12px;
+}
+.top_create_ac_btn a.common_btn {
+    background: #703A88;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 8px 5px 11px;
+    text-decoration-line: none !important;
+}
+/*bottom header*/
+.bottom_header_area {
+    padding: 13px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+}
+.bottom_menus li a {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Merriweather-Bold';
+    color: #272727;
+    padding: 0 34px 0 39px;
+    border-right: 1px solid #707070;
+}
+.bottom_menus li:last-child a{
+    border: none;
+}
+/*End header*/
+
+
+/* Ip box Css
+=============================================================== */
+.put_ip_address_box_area {
+    margin-top: -230px;
+}
+.ip_addresses_box, .ip_details_information_text {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+    padding: 40px;
+    background: #fff;
+}
+.ip_details_information_text{
+    margin-top: 60px;
+}
+.put_ip_address_left_side {
+    margin-right: 25px;
+}
+.put_ip_address_right_side {
+    margin-left: 25px;
+}
+
+.ip_address_put_in_box {
+    background: #F8F8F8;
+    border-radius: 2px;
+    border: 1px solid #FAFAFA;
+    box-shadow: 0 0 6px rgba(0,0,0,0.07);
+    padding: 14px 20px;
+    margin-bottom: 30px;
+}
+.ip_put_label {
+    width: 20%;
+}
+.ip_put_here {
+    width: 80%;
+}
+.ip_put_in {
+    width: 93%;
+}
+.ip_copy_icon {
+    width: 7%;
+    text-align: right;
+}
+.ip_put_label h2 img{
+    margin-left: 20px;
+}
+.ip_put_in input {
+    width: 100%;
+    border: none;
+    background: none;
+}
+.ip_put_in input::placeholder {
+    font-size: 18px;
+    line-height: 23px;
+    color: #272727;
+    font-family: 'Merriweather-Bold';
+}
+
+.second_ip_put_box {
+    position: relative;
+}
+.second_ip_put_box:after{
+    position: absolute;
+    top: 55px;
+    right: 120px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #F8F8F8;
+    border-left: 12px solid #F8F8F8;
+    transform-origin: 0 0;
+    transform: rotate(315deg);
+    box-shadow: -2px 2px 3px rgb(0,0,0,0.07);
+}
+
+table.table tbody tr td {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 0;
+}
+.ip_information_box {
+    background: #F8F8F8;
+    border: 1px solid #ededed;
+    box-shadow: 0 0 6px rgba(0,0,0,0.07);
+    border-radius: 2px;
+    padding: 13px 20px 0px;
+    position: relative;
+}
+.ip_information_box:after {
+    position: absolute;
+    top: 45px;
+    right: -22px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #F8F8F8;
+    border-left: 12px solid #F8F8F8;
+    transform-origin: 0 0;
+    transform: rotate(225deg);
+    box-shadow: -3px 3px 3px rgb(0,0,0,0.07);
+}
+.ip_private_view{
+    margin-left: 42px;
+}
+.ip_private_view p {
+    font-size: 12px;
+    line-height: 15px;
+}
+.hide_my_ip_btn a {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Merriweather-Bold';
+    background: #703A88;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 2px;
+    margin: 13px 0 30px;
+}
+
+.map_area iframe {
+    height: 250px;
+    width: 100%;
+    margin-top: 25px;
+}
+.map_info {
+    margin-top: 22px;
+}
+.map_info p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Merriweather-Bold';
+}
+
+.ip_details_information_area {
+    margin-bottom: 70px;
+}
+.ip_details_single_text {
+    margin-bottom: 15px;
+}
+.ip_details_single_text p {
+    margin-top: 15px;
+}
+
+
+/* Dns page Css
+=============================================================== */
+.ip_addresses_box.dns_lookukp_box {
+    padding: 40px 94px;
+}
+.lookup_details_info_text{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.dns_lookup_details {
+    border: 1px solid #707070;
+    border-radius: 3px;
+    padding: 30px 0;
+}
+.dns_title {
+    color: #703A88;
+    text-transform: uppercase;
+    border-bottom: 4px solid #F6FF00;
+    display: inline-block;
+}
+.dns_lookup_fill_box_area {
+    margin: 30px 0 20px;
+}
+.dns_url{
+    margin-right: 11px;
+    width: 13%;
+}
+.url_label {
+    background: #703A88;
+    padding: 14px 0;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
+}
+.dns_lookup_form {
+    width: 87%;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
+    padding: 4px;
+}
+.dns_lookup_in {
+    width: 78%;
+}
+.dns_lookup_in input {
+    width: 100%;
+    border: none;
+    background: none;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.dns_lookup_in input::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: #BBBBBB;
+}
+.dns_lookup_btn {
+    width: 22%;
+    text-align: right;
+}
+.dns_lookup_btn button {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Merriweather-Bold';
+    text-transform: uppercase;
+    background: #703A88;
+    border: none;
+    color: #fff;
+    padding: 12px 29px 11px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
+}
+.dns_lookup_text {
+    padding: 0 50px;
+}
+.dns_lookup_text p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #595959;
+}
+
+/* Speed Test page Css
+=============================================================== */
+.internet_speed_test_area {
+    margin: 25px 0;
+}
+.speed_result a {
+    text-decoration-line: none !important;
+}
+.speed_result a img {
+    margin-right: 8px;
+}
+.internet_speed_go_btns {
+    margin: 10px 45px 0;
+    cursor: pointer;
+}
+.internet_speed_go_btns span.gobtntext{
+    font-size: 56px;
+    font-family: 'Merriweather-Bold';
+    color: #703A88;
+}
+.speedr_img {
+    margin-right: 15px;
+}
+.speedr_info_text h3 {
+    line-height: 25px;
+}
+.speedr_info_text p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 25px;
+    font-family: 'Merriweather-Bold';
+    color: #703A88;
+}
+.single_speed_result {
+    margin-right: 60px;
+}
+.single_speed_result:last-child {
+    margin: 0;
+}
+.first_circle {
+    border: 1px solid #7239846b;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    line-height: 124px;
+    position: relative;
+}
+.second_circle {
+    border: 1px solid #723984a8;
+    border-radius: 50%;
+    width: 154px;
+    height: 154px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.third_circle {
+    border: 1px solid #723984;
+    border-radius: 50%;
+    width: 146px;
+    height: 146px;
+    line-height: 146px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+
+/* Speed Meter Css
+=============================================================== */
+#speedtestMeter {
+    display: none;
+}
+
+.background-half-round {
+  width: 188px;
+  height: 188px;
+  background: #fff;
+  background-image: url(../img/icons/meter-round.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+}
+.background-half-round:after {
+    content: url(../img/icons/kata-dashbord.svg);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: auto;
+    bottom: 72px;
+    left: 50%;
+    margin-left: -13px;
+}
+.final_number {
+    font-size: 23px;
+    line-height: 28px;
+    font-family: Merriweather-Light;
+}
+.final_speed {
+    font-size: 11px;
+    line-height: 23px;
+    font-family: 'Merriweather-Bold';
+    color: #703A88;
+}
+
+.speed-0,
+.speed-1,
+.speed-5,
+.speed-10,
+.speed-20,
+.speed-30,.speed-50,.speed-70,.speed-90 {
+  position: absolute;
+}
+.speed-0,.speed-90{
+  bottom: 42px;
+  left: 38px;
+}
+.speed-1,.speed-70{
+  bottom: 72px;
+  left: 23px;
+}
+.speed-5,.speed-50{
+  bottom: 105px;
+  left: 27px;
+}
+.speed-10,.speed-30{
+  bottom: 135px;
+  left: 53px;
+}
+.speed-20{
+  bottom: 150px;
+  left: 50%;
+  margin-left: -8px;
+}
+.speed-30{
+    left: auto;
+    right: 53px;
+}
+.speed-50
+{
+    left: auto;
+    right: 27px;
+}
+.speed-70{
+
+    left: auto;
+    right: 23px;
+}
+.speed-90 {
+    left: auto;
+    right: 38px;
+}
+.speed-number span {
+    font-size: 11px;
+    line-height: 13px;
+    color: #703A88;
+}
+
+.pointer {
+    height: 84px;
+    width: 84PX;
+    margin: 60px auto 0px;
+    transform: rotate(0deg);
+    background-position: center;
+    position: relative;
+}
+.pointer:before {
+    content: url(../img/icons/kata.svg);
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    transform: rotate(-130deg);
+    right: 50%;
+    bottom: -8px;
+}
+/*animation*/
+.speed-ani {
+  animation: speeding  2s infinite alternate;
+}
+@keyframes speeding {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  } 
+  10% {
+    transform: rotate(20deg);
+  }
+  15% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(40deg);
+  }
+  25% {
+    transform: rotate(50deg);
+  } 
+  30%{
+    transform: rotate(60deg);
+  }
+  35%{
+    transform: rotate(70deg);
+  }
+  40%{
+    transform: rotate(80deg);
+  }
+  45%{
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  55% {
+    transform: rotate(110deg);
+  }
+  60% {
+    transform: rotate(120deg);
+  }
+  65% {
+    transform: rotate(130deg);
+  }
+  70% {
+    transform: rotate(140deg);
+  }
+  75% {
+    transform: rotate(150deg);
+  }
+  80% {
+    transform: rotate(160deg);
+  }
+  85% {
+    transform: rotate(170deg);
+  }
+  90% {
+    transform: rotate(180deg);
+  }
+  95% {
+    transform: rotate(190deg);
+  }
+  96% {
+    transform: rotate(200deg);
+  }
+  97% {
+    transform: rotate(220deg);
+  }
+  98% {
+    transform: rotate(230deg);
+  }
+  100% {
+    transform: rotate(245deg);
+  }
+}
